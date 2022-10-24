@@ -11,7 +11,7 @@ export default class Route extends Scene {
         this.infobox = new InfoBox({
             ctx: this.ctx,
             tileSize: this.tileSize
-        });console.log(this.interactable );
+        });
     }
 
     draw (direction) {
