@@ -3,11 +3,32 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "map/alabastia.tmx",
     "expandedProjectPaths": [
+        ".",
+        "tilesets"
     ],
     "exportAsImage.useCurrentScale": true,
     "fileStates": {
+        "map/alabastia.tmx": {
+            "expandedGroupLayers": [
+                5
+            ],
+            "scale": 5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 242.8,
+                "y": 206.60000000000002
+            }
+        },
+        "tilesets/collisonblock.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilesets/tileset-alistair.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
     },
     "last.exportedFilePath": "/Users/oliverjessner/github/taschenmonster/src/game/data/scenes",
     "last.imagePath": "/Users/oliverjessner/github/taschenmonster/src/game/assets/tilesets/raw",
@@ -17,9 +38,16 @@
     "map.tileHeight": 16,
     "map.tileWidth": 16,
     "openFiles": [
+        "tilesets/tileset-alistair.tsx",
+        "tilesets/tileset-alistair.tsx",
+        "tilesets/collisonblock.tsx",
+        "map/alabastia.tmx"
     ],
     "project": "taschenmonster.tiled-project",
     "recentFiles": [
+        "tilesets/tileset-alistair.tsx",
+        "tilesets/collisonblock.tsx",
+        "map/alabastia.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
