@@ -9,30 +9,34 @@ const mapPosition = {
     x: -240,
     y: -560,
 };
+const playerOffset = {
+        x: 400,
+        y: 320
+};
 const mapData = await loadMapData('alabastia');
 const maggus = new Figure({
     src: './assets/chars/maggus.png',
-    offset: {
-        x: 400,
-        y: 400
-    }
+    offset: structuredClone(playerOffset)
 }, ctx);
 const alabastia = new Route({
     src: './assets/map/raw/alabastia.png',
     name: 'alabastia',
     position: structuredClone(mapPosition),
+    offset: structuredClone(playerOffset),
     mapData
 }, ctx);
 const foreground = new Scene({
     src: './assets/map/raw/alabastia_foreground_objects.png',
     name: 'alabastia_foreground',
     position: structuredClone(mapPosition),
+    offset: structuredClone(playerOffset),
     mapData
 }, ctx);
 const collisonBlock = new Scene({
     src: './assets/map/raw/alabastia_collisionblocks.png',
     name: 'alabastia_collisionblocks',
     position: structuredClone(mapPosition),
+    offset: structuredClone(playerOffset),
     mapData
 }, ctx);
 const keyAction = Object.freeze({

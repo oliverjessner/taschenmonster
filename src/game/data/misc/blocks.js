@@ -1,7 +1,7 @@
 export default Object.freeze({
-    collisionBlock: 2116,
+    collisionBlock: 6007,
     redDoor: 1724,
     blueDoor: 2033,
-    arrowRightSign: 1535,
-    rectangleSign: 1534
+    greySign: 274,
+    woodSign: 2240
 });

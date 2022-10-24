@@ -11,14 +11,14 @@ export default class Route extends Scene {
         this.infobox = new InfoBox({
             ctx: this.ctx,
             tileSize: this.tileSize
-        });
+        });console.log(this.interactable );
     }
 
     draw (direction) {
         super.draw(direction);
         
         if (gameSettings.grid) {
-            return this.#renderGrid();
+            this.#renderGrid();
         }
         if (gameSettings.cordinates) {
             console.log({
@@ -70,10 +70,10 @@ export default class Route extends Scene {
     interact () {
         const block = this.#getBlockNextToPlayer();
 
-        if (block === blocks.arrowRightSign) {
+        if (block === blocks.greySign) {
             this.infobox.draw('Willkommen in Alabastia 🌎');
         }
-        if (block === blocks.rectangleSign) {
+        if (block === blocks.woodSign) {
             this.infobox.draw('Muss net schmecke muss wirken 💪');
         }
     }

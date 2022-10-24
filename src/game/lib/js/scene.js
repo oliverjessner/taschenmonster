@@ -8,13 +8,13 @@ export default class Scene extends Sprite {
 
     constructor (config, ctx) {
         super(config, ctx);
-        this.collision = this.mapData.layers.find(l => l.name === 'collionsblock');
+        this.collision = this.mapData.layers.find(l => l.name === 'collisionblocks');
         this.houses = this.mapData.layers.find(l => l.name === 'houses');
     }
 
     whereAmI () {
-        const x = Math.abs(this.position.x - 480);
-        const y = Math.abs(this.position.y - 640);
+        const x = Math.abs(this.position.x - this.offset.x - this.tileSize);
+        const y = Math.abs(this.position.y - this.offset.y - this.tileSize * 3);
 
         return {
             x: x / this.tileSize,
