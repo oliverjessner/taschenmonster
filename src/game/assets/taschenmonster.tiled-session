@@ -1,17 +1,25 @@
 {
     "activeFile": "map/alabastia.tmx",
     "expandedProjectPaths": [
+        "tilesets",
         "map",
-        ".",
-        "tilesets"
+        "."
     ],
+    "exportAsImage.useCurrentScale": true,
     "fileStates": {
+        "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag2/assets/tilesets/Nature Summer.tsx": {
+            "scaleInDock": 1
+        },
+        "map/Houses  Buildings.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "map/alabastia.tmx": {
-            "scale": 2,
-            "selectedLayer": 4,
+            "scale": 5,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 233,
-                "y": 230.5
+                "x": 200.6,
+                "y": 354.40000000000003
             }
         },
         "tilesets/Nature Autumn.tsx": {
@@ -23,7 +31,7 @@
             "scaleInEditor": 1
         },
         "tilesets/Nature Summer.tsx": {
-            "scaleInDock": 1.5,
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "tilesets/Serene_Village_16x16.tsx": {
@@ -35,8 +43,8 @@
             "scaleInEditor": 1
         }
     },
-    "last.exportedFilePath": "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag2/src/data",
-    "last.imagePath": "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag2/assets/tilesets/raw",
+    "last.exportedFilePath": "/Users/oliverjessner/github/programmieren-lernen-mit-oli/games/taschenmonster/tag6/src/game/data/scenes",
+    "last.imagePath": "/Users/oliverjessner/Downloads",
     "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
     "openFiles": [
         "map/alabastia.tmx",
@@ -44,7 +52,6 @@
         "tilesets/Nature Summer.tsx",
         "tilesets/Nature Ice.tsx",
         "tilesets/Nature Autumn.tsx",
-        "tilesets/collisonblock.tsx",
         "tilesets/collisonblock.tsx"
     ],
     "project": "taschenmonster.tiled-project",
@@ -54,7 +61,8 @@
         "tilesets/Nature Ice.tsx",
         "tilesets/Nature Summer.tsx",
         "tilesets/Serene_Village_16x16.tsx",
-        "map/alabastia.tmx"
+        "map/alabastia.tmx",
+        "map/Houses  Buildings.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
