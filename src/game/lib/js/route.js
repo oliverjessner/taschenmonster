@@ -1,7 +1,6 @@
 import Scene from './scene.js';
 import gameSettings from './gameSettings.js';
 import { rightKey, leftKey, upKey, downKey } from '../../data/misc/keys.js';
-import blocks from '../../data/misc/blocks.js';
 import InfoBox from './infobox.js';
 
 export default class Route extends Scene {
@@ -12,6 +11,27 @@ export default class Route extends Scene {
             ctx: this.ctx,
             tileSize: this.tileSize
         });
+        this.events = {};
+    }
+
+    addEventListener (name, fn) {
+        this.events[name] = fn;
+    }
+
+    checkIfEnter () {
+        const { x, y, direction } = this.whereAmI();
+        const block = this.interactable.data[y][x]; 
+
+        if (block !== 0) {
+            this.events.sceneChange({ 
+                block, 
+                direction, 
+                x, 
+                y,
+                scene: this.connections[block],
+                entry: this.connections.entry
+            });
+        }
     }
 
     draw (direction) {
@@ -26,6 +46,8 @@ export default class Route extends Scene {
                 facingBlock: this.#getBlockNextToPlayer()
             });
         }
+        
+        return this.checkIfEnter();
     }
 
     #renderGrid () {
@@ -70,10 +92,10 @@ export default class Route extends Scene {
     interact () {
         const block = this.#getBlockNextToPlayer();
 
-        if (block === blocks.greySign) {
+        if (block === this.blocks.greySign) {
             this.infobox.draw('Willkommen in Alabastia 🌎');
         }
-        if (block === blocks.woodSign) {
+        if (block === this.blocks.woodSign) {
             this.infobox.draw('Muss net schmecke muss wirken 💪');
         }
     }

@@ -1,7 +1,4 @@
-export default async function loadMapData (name) {
-    const resp = await fetch(`/data/scenes/${name}.json`);
-    const json = await resp.json();
-
+function wellformMapData (json) {
     json.layers = json.layers.map(function fixRows (layer) {
         if (!layer.data) {
             return layer;
@@ -12,6 +9,15 @@ export default async function loadMapData (name) {
 
         return layer;
     }); 
+}
+
+export default async function loadMapData (name, data) {
+    const resp = await fetch(`/data/scenes/${name}/${data}.json`);
+    const json = await resp.json();
+
+    if (data === 'map') {
+        wellformMapData(json);
+    }
 
     return json;
 }

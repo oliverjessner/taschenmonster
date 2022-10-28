@@ -3,9 +3,13 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "map/alabastia.tmx",
+    "activeFile": "map/home/map.tmx",
     "expandedProjectPaths": [
+        "map/oakslab",
+        "map/home",
+        "map",
         ".",
+        "map/alabastia",
         "tilesets"
     ],
     "exportAsImage.useCurrentScale": true,
@@ -17,12 +21,61 @@
             "scale": 5,
             "selectedLayer": 2,
             "viewCenter": {
-                "x": 242.8,
-                "y": 206.60000000000002
+                "x": 241.70000000000005,
+                "y": 206.5
             }
+        },
+        "map/alabastia/map.tmx": {
+            "scale": 5,
+            "selectedLayer": 15,
+            "viewCenter": {
+                "x": 186.9,
+                "y": 186.30000000000004
+            }
+        },
+        "map/home/map.tmx": {
+            "scale": 5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 94.1,
+                "y": 68.9
+            }
+        },
+        "map/oakslab/map.tmx": {
+            "scale": 5,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 122.7,
+                "y": 125.9
+            }
+        },
+        "map/professor_oaks_lab.tmx": {
+            "scale": 5,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 109.9,
+                "y": 112.10000000000001
+            }
+        },
+        "map/tilesets/collisonblock.tsx": {
+            "scaleInDock": 1
+        },
+        "map/tilesets/innenraum.tsx": {
+            "scaleInDock": 1
+        },
+        "map/tilesets/tileset-alistair.tsx": {
+            "scaleInDock": 1
+        },
+        "tilesets/HG_SS_Indoor_Rips_by_Newtiteuf.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "tilesets/collisonblock.tsx": {
             "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "tilesets/innenraum.tsx": {
+            "scaleInDock": 1.5,
             "scaleInEditor": 1
         },
         "tilesets/tileset-alistair.tsx": {
@@ -30,24 +83,31 @@
             "scaleInEditor": 1
         }
     },
-    "last.exportedFilePath": "/Users/oliverjessner/github/taschenmonster/src/game/data/scenes",
+    "last.exportedFilePath": "/Users/oliverjessner/github/taschenmonster/src/game/data/scenes/alabastia",
+    "last.externalTilesetPath": "/Users/oliverjessner/github/taschenmonster/src/game/assets/tilesets",
     "last.imagePath": "/Users/oliverjessner/github/taschenmonster/src/game/assets/tilesets/raw",
-    "map.height": 32,
+    "map.height": 11,
     "map.lastUsedExportFilter": "All Files (*)",
     "map.lastUsedFormat": "tmx",
     "map.tileHeight": 16,
     "map.tileWidth": 16,
+    "map.width": 12,
     "openFiles": [
-        "tilesets/tileset-alistair.tsx",
-        "tilesets/tileset-alistair.tsx",
-        "tilesets/collisonblock.tsx",
-        "map/alabastia.tmx"
+        "map/oakslab/map.tmx",
+        "map/home/map.tmx",
+        "map/alabastia/map.tmx"
     ],
     "project": "taschenmonster.tiled-project",
     "recentFiles": [
-        "tilesets/tileset-alistair.tsx",
+        "map/oakslab/map.tmx",
+        "map/alabastia/map.tmx",
+        "map/home/map.tmx",
         "tilesets/collisonblock.tsx",
-        "map/alabastia.tmx"
+        "tilesets/innenraum.tsx",
+        "map/professor_oaks_lab.tmx",
+        "map/alabastia.tmx",
+        "tilesets/HG_SS_Indoor_Rips_by_Newtiteuf.tsx",
+        "tilesets/tileset-alistair.tsx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {

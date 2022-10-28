@@ -1,13 +1,22 @@
 export default class Sprite {
     isInteracting = false;
 
-    constructor ({ src, position, name, offset, mapData }, ctx) {
+    constructor ({ src, data, ctx }) {
+        const [
+            { mapPosition, playerOffset }, 
+            mapData, 
+            blocks,
+            connections
+        ] = data;
+
         this.ctx = ctx;
         this.src = src;
-        this.position = position;
-        this.offset = offset;
-        this.name = name;
         this.image = new Image();
+        this.position = structuredClone(mapPosition),
+        this.offset = structuredClone(playerOffset),
+        this.blocks = blocks;
+        this.connections = connections;
+        this.blocks;
         this.mapData = mapData;
     }
 

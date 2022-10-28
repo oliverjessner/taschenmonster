@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="30" height="32" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="1">
  <editorsettings>
-  <export target="../../data/scenes/alabastia.json" format="json"/>
+  <export target="../../../data/scenes/alabastia/map.json" format="json"/>
  </editorsettings>
- <tileset firstgid="1" source="../tilesets/tileset-alistair.tsx"/>
- <tileset firstgid="6007" source="../tilesets/collisonblock.tsx"/>
+ <tileset firstgid="1" source="../../tilesets/tileset-alistair.tsx"/>
+ <tileset firstgid="6007" source="../../tilesets/collisonblock.tsx"/>
  <layer id="1" name="water" width="30" height="32">
   <data encoding="csv">
 295,386,293,384,385,386,384,384,294,295,384,385,295,295,293,293,386,295,295,294,294,295,385,386,384,295,295,294,294,385,
@@ -511,7 +511,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="16" name="collisionblocks" width="30" height="32" visible="0">
+ <layer id="16" name="collisionblocks" width="30" height="32">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,6007,0,0,0,0,6007,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,6007,0,0,0,0,6007,0,0,0,0,0,0,0,0,0,0,0,
@@ -524,7 +524,7 @@
 0,6007,0,0,0,0,0,0,6007,6007,6007,6007,0,0,0,0,0,0,0,6007,6007,6007,6007,0,0,0,0,0,6007,0,
 0,6007,0,0,0,0,0,0,6007,6007,6007,6007,0,0,0,0,0,0,0,6007,6007,6007,6007,0,0,0,0,0,6007,0,
 0,6007,0,0,0,0,0,0,6007,6007,6007,6007,0,0,0,0,0,0,0,6007,6007,6007,6007,0,0,0,0,0,6007,0,
-0,6007,0,0,0,0,0,6007,6007,0,6007,6007,0,0,0,0,0,0,6007,6007,0,6007,6007,0,0,0,0,0,6007,0,
+0,6007,0,0,0,0,0,6007,6007,0,6007,6007,0,0,0,0,0,0,6007,6007,6007,6007,6007,0,0,0,0,0,6007,0,
 0,6007,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6007,0,
 0,6007,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6007,0,
 0,6007,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6007,0,

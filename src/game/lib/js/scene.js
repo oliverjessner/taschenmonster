@@ -1,6 +1,5 @@
 import Sprite from './sprite.js';
 import { rightKey, leftKey, upKey, downKey } from '../../data/misc/keys.js';
-import blocks from '../../data/misc/blocks.js';
 
 export default class Scene extends Sprite {
     #lastDirection = downKey;
@@ -9,7 +8,6 @@ export default class Scene extends Sprite {
     constructor (config, ctx) {
         super(config, ctx);
         this.collision = this.mapData.layers.find(l => l.name === 'collisionblocks');
-        this.houses = this.mapData.layers.find(l => l.name === 'houses');
     }
 
     whereAmI () {
@@ -27,35 +25,28 @@ export default class Scene extends Sprite {
         const { x, y } = this.whereAmI();
         const isLeftOfBody = this.collision.data[y][x - 1];
         
-        return isLeftOfBody !== blocks.collisionBlock;
+        return isLeftOfBody !== this.blocks.collisionBlock;
     }
 
     #isRightSideFree () {
         const { x, y } = this.whereAmI();
         const isRightOfBody = this.collision.data[y][x + 1];
         
-        return isRightOfBody !== blocks.collisionBlock;
+        return isRightOfBody !== this.blocks.collisionBlock;
     }
 
     #isTopSideFree () {
         const { x, y } = this.whereAmI();
         const isTopOfHead = this.collision.data[y - 1][x];
         
-        return isTopOfHead !== blocks.collisionBlock;
+        return isTopOfHead !== this.blocks.collisionBlock;
     }
 
     #isBottomSideFree () {
         const { x, y } = this.whereAmI();
         const isBottomOfHead = this.collision.data[y + 1][x];
-        
-        return isBottomOfHead !== blocks.collisionBlock;
-    }
 
-    #isEnteringBuilding () {
-        const { x, y } = this.whereAmI();
-        const isHouseAbove = this.houses.data[y][x];
-        
-        return blocks.blueDoor === isHouseAbove || blocks.redDoor === isHouseAbove;    
+        return isBottomOfHead !== this.blocks.collisionBlock;
     }
 
     draw (direction) {
@@ -67,9 +58,6 @@ export default class Scene extends Sprite {
         }
         // up
         if (direction === upKey && this.#isTopSideFree()) {
-            if (this.#isEnteringBuilding()) {
-                console.log('is entering building');
-            }
             if (this.#lastDirection === upKey) {
                 this.position.y += this.tileSize;
             }
